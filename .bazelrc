@@ -1,0 +1,7 @@
+startup --windows_enable_symlinks
+common --enable_bzlmod
+common --enable_runfiles
+
+build:vc-studio --action_env=BAZEL_VC="C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/VC"
+
+build --config=vc-studio
